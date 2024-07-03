@@ -1,0 +1,272 @@
+/* Dark Grayish Magenta: hsl(303, 10%, 53%)
+Light Grayish Magenta: hsl(300, 24%, 96%)
+White: hsl(0, 0%, 100%)
+Very Dark Magenta: hsl(300, 43%, 22%)
+Soft Pink: hsl(333, 80%, 67%) */
+body{
+    margin: 0;
+    padding: 0;
+    text-align: center;
+}
+
+header{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+   box-shadow: 1px 0.5px 0.5px grey;
+   font-family: "Rubik", sans-serif;
+ 
+}
+header h1{
+    font-size: 3rem;
+    margin: 10px 0;
+}
+
+h1 span{
+   color:hsl(300, 43%, 22%) ; 
+}
+nav ul{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    list-style: none;
+}
+nav ul>li{
+    margin-right: 1rem;
+}
+.nav-btn a{
+font-size: 2rem;
+text-decoration: none;
+font-weight: bold;
+color:   hsl(300, 43%, 22%);
+}
+main{
+    margin: 32px auto;
+    width: 900px;
+}
+#first-section{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+#first-section .my-profile{
+    font-family: "Rubik", sans-serif;
+}
+.my-profile h2{
+    font-size: 2rem;
+}
+.my-profile p{
+    font-size:1.2rem ;
+}
+.my-profile h2>span{
+    color: hsl(303, 10%, 53%);
+}
+#second-section{
+    font-family: "Rubik", sans-serif;
+    margin-bottom: 2.5rem;
+}
+.my-goals ol{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    list-style: none;
+    gap: 50px;
+   
+}
+.display-date ul{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    list-style: none;
+
+
+}
+.display-date li>span{
+    font-size: 3rem;
+    padding: 0.5rem;
+}
+.display-date ul>li:nth-of-type(1){
+    background-color:  hsl(300, 43%, 22%) ;
+    font-size: 3rem;
+    padding: 0.5rem;
+    position: relative;
+    right: -200px;
+}
+.display-date ul>li:nth-of-type(2){
+    background-color:  hsl(300, 43%, 22%) ;
+    font-size: 3rem;
+    padding: 0.5rem;
+}
+.display-date ul>li:nth-of-type(3){
+    background-color:  hsl(300, 43%, 22%) ;
+    font-size: 3rem;
+    padding: 0.5rem;
+    position: relative;
+    left: -200px;
+}
+
+.my-goals ol>li{
+    background-color:hsl(300, 24%, 96%) ;
+    padding: 0.5rem;
+    border-radius: 10px;
+    transition: 1s transform ease;
+}
+.my-goals ol>li:hover{
+    transform: scale(1.15);
+}
+.my-goals h2{
+    margin: 2.5rem;
+    font-size: 30px;
+}
+footer{
+    font-family: "Rubik", sans-serif;
+    background-color: hsl(303, 10%, 53%);
+    padding:1rem ;
+}
+footer a{
+    text-decoration: none;
+    color:  hsl(300, 24%, 96%) ;
+    font-weight: bold;
+}
+footer a:hover{
+  text-decoration: underline;
+  color:  hsl(333, 80%, 67%);
+}
+footer span,p{
+    font-size: 1rem;
+    font-weight: bold;
+}
+footer ul{
+list-style: none;
+display: grid;
+place-content: center;
+grid-template-columns: 1fr 1fr 1fr;
+gap: 10px;
+
+}
+
+
+
+
+
+/*responsive design*/
+ @media(max-width:700px){
+body{
+    padding: 0;
+    margin: 0;
+    max-width: 350px;
+}
+header{
+    width: 100%;
+    box-shadow: none;
+}
+header h1{
+    font-size: 2rem;
+    margin: 5px 0;
+}
+header nav{
+position: relative;
+left: 100px;
+}
+.nav-btn a{
+    font-size: 1.3rem;
+    text-decoration: none;
+    font-weight: bold;
+    color:   hsl(300, 43%, 22%);
+    }
+    nav ul{
+        padding-left: 2rem;
+    }
+main{
+    max-width: 400px;
+    padding-left: 35px;
+}
+
+#first-section p ,#first-section h2 {
+    font-size:1rem;
+    margin: 1rem;
+}
+
+
+.my-profile h2>span{
+    font-size:1.4rem;
+}
+
+#first-section{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+.display-date ul>li:nth-of-type(1){
+    background-color:  hsl(300, 43%, 22%) ;
+    font-size: 3rem;
+    padding: 0.5rem;
+    position: relative;
+    right: -30px;
+}
+.display-date ul>li:nth-of-type(2){
+    background-color:  hsl(300, 43%, 22%) ;
+    font-size: 3rem;
+    padding: 0.5rem;
+}
+.display-date ul>li:nth-of-type(3){
+    background-color:  hsl(300, 43%, 22%) ;
+    font-size: 3rem;
+    padding: 0.5rem;
+    position: relative;
+    left: -30px;
+}
+
+
+#second-section .my-goals>ol{
+display:flex;
+justify-content: center;
+flex-direction: column;
+align-items: center;
+margin: 0 auto;
+/* margin: ; */
+padding:0 1rem 0 1rem ;
+}
+
+.display-date ul{
+    padding: 0;
+}
+
+.display-date ul>li{
+    font-size: 2rem;
+}
+
+.my-goals>ol li{
+    margin-bottom: 0.5rem;
+    width: 300px;
+    transition: 1s transform ease;
+}
+
+.my-goals>ol li:nth-of-type(2){
+    margin-top: -1rem;
+    width: 300px;
+    transition: 1s transform ease;
+}
+.my-goals>ol li:nth-of-type(3){
+    margin-top: -1rem;
+    width: 300px;
+    transition: 1s transform ease;
+}
+
+.my-goals li>p{
+    margin-bottom: 1rem;
+    font-size: 0.7rem;
+    transition: 1s transform ease;
+}
+
+.my-goals ol>li:hover{
+    transform: scale(1.05);
+}
+footer{
+    width: 120%;
+}
+footer ul{
+    display: block;
+}
+
+ }

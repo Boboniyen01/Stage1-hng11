@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>STAGE ONE</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Rubik:ital,wght@0,300..900;1,300..900&display=swap" rel="stylesheet">
+</head>
+<body>
+    <header>
+            <h1>Stage<span>1</span></h1>
+        <nav>
+            <ul>
+                <li class="nav-btn"><a href="#links">links</a></li>
+                <li class="nav-btn"><a href="#goals">Goals</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <section id="first-section">
+            <div>
+                <img src="./images/to_be_removed-removebg (1).png" alt="this is slack profile picture" data-testid="slackProfilePicture">
+            </div>
+            <div class="my-profile">
+                <h2>i am <span data-testid="slackDisplayName">BoboNiyenDev</span> </h2>
+                <p>Welcome to my single page design ,  made by encorperating , hypertext markup language (HTML) ,  cascading style sheet (CSS)
+                    and javascript (JS) , task given by HNG .
+                </p>
+            </div>
+        </section>
+        <section id="second-section">
+            <div class="display-date">
+                <h2> Current Day : <span id="present-date" data-testid="currentDay"></span></h2>
+                <ul >
+                    <li class="hours" data-testid="CurrentTimeUTC"></li>
+            
+                    <li class="minute" data-testid="CurrentTimeUTC"></li>
+                  
+                    <li class="seconds" data-testid="CurrentTimeUTC"></li>
+                </ul>
+            </div>
+            
+            <div class="my-goals">
+                <h2 id="goals">Goals</h2>
+                <ol>
+                    <li>
+                        <h3>Enhance Technical Skills</h3>
+                        <p>
+                           - To deepen my understanding on HTML , CSS , and javascript.
+                        </p>
+                        <p>
+                           - Gain proficiency in a back-end language such as Node.js, Python (Django/Flask), or Ruby on Rails.
+                        </p>
+                        <p>
+                           -To Regularly complete coding challenges and contribute to open-source projects to sharpen my problem-solving
+                            abilities.
+                        </p>
+                    </li>
+                    <li> 
+                        <h3>
+                            Build a Strong Portfolio
+                        </h3>
+                        <p>
+                           - Develop and deploy a series of projects that showcase my skills to the world, such as a personal portfolio
+                             website, a dynamic web application, or a collaborative project with other interns.
+                        </p>
+                        <p>
+                           -To be able to fluently Use version control systems like Git to manage my code and showcase
+                            my workflow on platforms like GitHub.
+                        </p>
+                    </li>
+                    <li> 
+                        <h3>
+                            Network and Collaborate
+                        </h3>
+                        <p>
+                           - Participate in team projects or hackathons to enhance my ability to work collaboratively and learn from others.
+                        </p>
+                        <p>
+                           - Engage actively with mentors, peers, and the wider HNG community to 
+                            build professional relationships and seek feedback on your work.
+                        </p>
+                    </li>
+                </ol>
+            </div>
+        </section>
+        
+
+    </main>
+    <footer>
+        <div id="links">
+            <h2>Links</h2>
+            <p>Check Out : </p>
+            <ul>
+                <li><span>HNG official website here : </span><a href="http://hng.tech/learn" target="_blank"data-testid="hngLink">HNG Link</a></li>
+                <li><span> Keyword.dog website here : </span><a href="http://keyword.dog" target="_blank"  data-testid="KeywordLink">Keyword Link</a></li>
+                <li><span>Scapeany website here : </span><a href="http://scrapeanyweb.site" target="_blank" data-testid="ScrapeanyWebLink">Scrapeany Web Link</a></li>
+                <li ><span>slack Email :</span><a href="mailto:abdulhakeemabiola76@gmail.com" data-testid="slackEmail">Contact Me Via Email</a></li>
+               
+            </ul>
+        </div>
+    </footer>
+    <script src="date.js"></script>
+    
+</body>
+</html>
